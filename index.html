@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gowtham Reddy Nimmalapalli | Postdoctoral Fellow</title>
+    <title>Dr. Gowtham Reddy Nimmalapalli | Postdoctoral Fellow</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
     <style>
@@ -41,6 +41,17 @@
             text-align: center;
         }
 
+        /* Profile Photo Styling */
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #3498db;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+
         header h1 {
             font-size: 2.5rem;
             margin-bottom: 10px;
@@ -57,21 +68,38 @@
             font-size: 1.1rem;
         }
         
-        .contact-info a, .social-links a {
+        .contact-info a {
             color: #ffffff;
             text-decoration: none;
             margin: 0 10px;
             transition: color 0.3s;
         }
 
-        .contact-info a:hover, .social-links a:hover {
+        .contact-info a:hover {
             color: #3498db;
         }
 
+        /* Colored Social Links */
         .social-links {
-            margin-top: 15px;
-            font-size: 2rem;
+            margin-top: 20px;
+            font-size: 2.2rem;
         }
+
+        .social-links a {
+            text-decoration: none;
+            margin: 0 15px;
+            transition: transform 0.3s, opacity 0.3s;
+            display: inline-block;
+        }
+
+        .social-links a:hover {
+            transform: translateY(-5px);
+            opacity: 0.8;
+        }
+
+        .link-linkedin { color: #0077b5; }
+        .link-scholar { color: #4285f4; }
+        .link-orcid { color: #A6CE39; }
 
         /* Supervisor Links */
         .supervisor-link {
@@ -137,6 +165,8 @@
 
     <header>
         <div class="container">
+            <img src="profile.jpg" alt="Dr. Gowtham Reddy Nimmalapalli" class="profile-photo">
+            
             <h1>Dr. Gowtham Reddy Nimmalapalli</h1>
             <h2>Postdoctoral Fellow | IIT Gandhinagar</h2>
             
@@ -146,13 +176,13 @@
             </div>
 
             <div class="social-links">
-                <a href="https://www.linkedin.com/in/dr-gowtham-reddy-n-4098376b/" target="_blank" title="LinkedIn">
+                <a href="https://www.linkedin.com/in/dr-gowtham-reddy-n-4098376b/" target="_blank" title="LinkedIn" class="link-linkedin">
                     <i class="fab fa-linkedin"></i>
                 </a>
-                <a href="https://scholar.google.com/citations?user=1KALulcAAAAJ&hl=en" target="_blank" title="Google Scholar">
+                <a href="https://scholar.google.com/citations?user=1KALulcAAAAJ&hl=en" target="_blank" title="Google Scholar" class="link-scholar">
                     <i class="fas fa-graduation-cap"></i>
                 </a>
-                <a href="https://orcid.org/0000-0002-2358-1720" target="_blank" title="ORCID">
+                <a href="https://orcid.org/0000-0002-2358-1720" target="_blank" title="ORCID" class="link-orcid">
                     <i class="ai ai-orcid"></i>
                 </a>
             </div>
