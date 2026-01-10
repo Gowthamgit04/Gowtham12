@@ -101,7 +101,7 @@
         .link-scholar { color: #4285f4; }
         .link-orcid { color: #A6CE39; }
 
-        /* Supervisor Links */
+        /* Supervisor & Collaborator Links */
         .supervisor-link {
             color: #2c3e50;
             text-decoration: none;
@@ -112,6 +112,41 @@
         .supervisor-link:hover {
             color: #3498db;
             border-bottom: 1px solid #3498db;
+        }
+
+        /* Collaborators Styling */
+        .collaborator-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-top: 20px;
+        }
+
+        .collaborator-card {
+            text-align: center;
+            width: 200px;
+        }
+
+        .collaborator-photo {
+            width: 120px;
+            height: 120px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border: 2px solid #eeeeee;
+        }
+
+        .collaborator-name {
+            display: block;
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.1rem;
+        }
+
+        .collaborator-affiliation {
+            display: block;
+            color: #666;
+            font-size: 0.9rem;
         }
 
         /* Headings */
@@ -165,10 +200,10 @@
 
     <header>
         <div class="container">
-            <img src="profile.png" alt="Dr. Gowtham Reddy Nimmalapalli" class="profile-photo">
+            <img src="profile.jpg" alt="Dr. Gowtham Reddy Nimmalapalli" class="profile-photo">
             
             <h1>Dr. Gowtham Reddy Nimmalapalli</h1>
-            <h2>Postdoctoral Fellow | Indian Institute of Technology Gandhinagar</h2>
+            <h2>Postdoctoral Fellow | IIT Gandhinagar</h2>
             
             <div class="contact-info">
                 <a href="mailto:gowtham12.reddy@gmail.com"><i class="fas fa-envelope"></i> gowtham12.reddy@gmail.com</a>
@@ -205,19 +240,19 @@
             <div class="item">
                 <span class="date">Sep 2025 - Present</span>
                 <h3>Postdoctoral Fellow</h3>
-                <p><strong>Indian Institute of Technology Gandhinagar</strong></p>
+                <p><strong>IIT Gandhinagar</strong></p>
                 <p>Hybrid BCI for Effective Decision Communication</p>
                 <p>Principal Investigator: <a href="https://scholar.google.co.in/citations?user=5xxepFkAAAAJ&hl=en" target="_blank" class="supervisor-link">Dr. Yogesh Kumar Meena</a></p>
             </div>
 
             <div class="item">
-                <!-- <span class="date">Aug 2021 - Dec 2022</span> -->
+                <span class="date">Aug 2021 - Dec 2022</span>
                 <h3>Software Engineer II</h3>
                 <p><strong>Terralogic Software Solutions Pvt. Ltd., Bangalore</strong></p>
             </div>
 
             <div class="item">
-                <!-- <span class="date">Oct 2017 - Dec 2019</span> -->
+                <span class="date">Oct 2017 - Dec 2019</span>
                 <h3>Deep Learning Engineer</h3>
                 <p><strong>Innoactive Intelligence LLP, Bangalore</strong></p>
             </div>
@@ -227,22 +262,22 @@
             <h2 class="section-title">Education</h2>
             <div class="item">
                 <span class="date">Jan 2020 - Dec 2025</span>
-                <h3>Ph.D. in School of Medical Science and Technology</h3>
-                <p><strong>Indian Institute of Technology Kharagpur</strong></p>
-                <p>Thesis: An Integrated Framework for Predicting Epilepsy using EEG Signals</p>
-                <p>Supervisor: <a href="https://scholar.google.com/citations?user=tD8YpZUAAAAJ&hl=en" target="_blank" class="supervisor-link">Dr. Debashree Guha Adhya</a>; Co-supervisor: <a href="https://scholar.google.com/citations?user=k0MoQ9UAAAAJ&hl=en" target="_blank" class="supervisor-link">Prof. Manjunatha Mahadevappa</a></p>
+                <h3>Ph.D. in Computer Science</h3>
+                [cite_start]<p><strong>Indian Institute of Technology Kharagpur</strong> [cite: 19]</p>
+                [cite_start]<p>Thesis: An Integrated Framework for Predicting Epilepsy using EEG Signals [cite: 21]</p>
+                <p>Supervisor: <a href="https://scholar.google.com/citations?user=tD8YpZUAAAAJ&hl=en" target="_blank" class="supervisor-link">Dr. Debashree Guha Adhya</a>; Co-supervisor: <a href="https://scholar.google.com/citations?user=k0MoQ9UAAAAJ&hl=en" target="_blank" class="supervisor-link">Prof. [cite_start]Manjunatha Mahadevappa</a> [cite: 22]</p>
             </div>
 
             <div class="item">
-                <!-- <span class="date">Aug 2014 - Jul 2016</span> -->
+                <span class="date">Aug 2014 - Jul 2016</span>
                 <h3>M. Tech. in Signal Processing</h3>
-                <p><strong>University of Calicut</strong></p>
+                [cite_start]<p><strong>University of Calicut</strong> (CGPA: 8.25/10) [cite: 23]</p>
             </div>
 
             <div class="item">
-                <!-- <span class="date">Aug 2009 - May 2013</span> -->
+                <span class="date">Aug 2009 - May 2013</span>
                 <h3>B. Tech. in Electronics and Communication</h3>
-                <p><strong>JNTU Anantapur</strong></p>
+                [cite_start]<p><strong>JNTU Anantapur</strong> (79.12%) [cite: 24]</p>
             </div>
         </section>
 
@@ -250,37 +285,48 @@
             <h2 class="section-title">Publications</h2>
             <div class="item">
                 <p><strong>• Classification of epileptic EEG signals with the utilization of Bonferroni mean based fuzzy pattern tree</strong></p>
-                <p>Expert Systems with Applications, 239, 122424. (2024)</p>
+                [cite_start]<p>Expert Systems with Applications, 239, 122424. (2024) [cite: 29, 30, 31]</p>
             </div>
             <div class="item">
                 <p><strong>• Epilepsy detection using lightweight deep learning model over multilayer synchrosqueeze scalograms</strong></p>
-                <p>Physiological Measurement. (Under review)</p>
+                <p>Physiological Measurement. (Under review) [cite_start][cite: 32, 33]</p>
             </div>
             <div class="item">
                 <p><strong>• SEMG-based classification of grasp manipulation activities associated with the upper limb...</strong></p>
-                <p>Computers and Electrical Engineering. (Under review)</p>
+                <p>Computers and Electrical Engineering. (Under review) [cite_start][cite: 34, 35]</p>
             </div>
             <div class="item">
                 <p><strong>• An efficient ID CNN architecture for multi-channel EEG seizure detection</strong></p>
-                <p>Proceedings of the 47th Annual International Conference of the IEEE EMBS. (Presented, July 2025)</p>
+                <p>Proceedings of the 47th Annual International Conference of the IEEE EMBS. (Presented, July 2025) [cite_start][cite: 39, 40, 41]</p>
             </div>
             <div class="item">
                 <p><strong>• EEG artifact removal using stacked multi-Head attention transformer architecture</strong></p>
-                <p>46th Annual International Conference of the IEEE EMBS. (July 2024)</p>
+                <p>46th Annual International Conference of the IEEE EMBS. (July 2024) [cite_start][cite: 42, 43]</p>
             </div>
         </section>
 
         <section>
             <h2 class="section-title">Patents</h2>
             <div class="item">
-                <p>1. <strong>A Point-of-Care based System for Generating and Analyzing Tear Fern Patterns</strong> (Provisional No: 202531029164, 2025)</p>
-                <p>2. <strong>A Real-Time Ultrafast Epilepsy Diagnosis and Artifact Classification System</strong> (Application Filled Dec 2025)</p>
+                <p>1. [cite_start]<strong>A Point-of-Care based System for Generating and Analyzing Tear Fern Patterns</strong> (Provisional No: 202531029164, 2025) [cite: 26]</p>
+                <p>2. [cite_start]<strong>A Real-Time Ultrafast Epilepsy Diagnosis and Artifact Classification System</strong> (Application Filled Dec 2025) [cite: 27]</p>
             </div>
         </section>
         
-        <section style="border-bottom: none;">
+        <section>
             <h2 class="section-title">Professional Activities</h2>
-            <p><strong>Reviewer:</strong> IEEE ISBI, IEEE INDICON, IDEAL 2025, Frontiers in Neuroscience, Expert Systems with Applications, and Signal, Image and Video Processing.</p>
+            [cite_start]<p><strong>Reviewer:</strong> IEEE ISBI 2025, IEEE INDICON 2025, IDEAL 2025, Frontiers in Neuroscience, Expert Systems with Applications. [cite: 48, 49]</p>
+        </section>
+
+        <section style="border-bottom: none;">
+            <h2 class="section-title">Collaborators</h2>
+            <div class="collaborator-grid">
+                <div class="collaborator-card">
+                    <img src="aneek.jpg" alt="Dr. Aneek Adhya" class="collaborator-photo">
+                    <span class="collaborator-name">Dr. Aneek Adhya</span>
+                    <span class="collaborator-affiliation">IIT Kharagpur</span>
+                </div>
+            </div>
         </section>
     </div>
 
@@ -290,7 +336,3 @@
 
 </body>
 </html>
-
-
-
-
