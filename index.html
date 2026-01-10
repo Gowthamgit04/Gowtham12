@@ -152,6 +152,35 @@
             color: #333;
         }
 
+        /* Collaborators Styling */
+        .collaborator-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 250px;
+            margin-top: 20px;
+        }
+
+        .collaborator-photo {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+        }
+
+        .collaborator-name {
+            font-weight: bold;
+            color: #2c3e50;
+            font-size: 1.1rem;
+        }
+
+        .collaborator-affiliation {
+            color: #666;
+            font-size: 0.95rem;
+        }
+
         footer {
             text-align: center;
             padding: 30px;
@@ -211,13 +240,11 @@
             </div>
 
             <div class="item">
-                <!-- <span class="date">Aug 2021 - Dec 2022</span> -->
                 <h3>Software Engineer II</h3>
                 <p><strong>Terralogic Software Solutions Pvt. Ltd., Bangalore</strong></p>
             </div>
 
             <div class="item">
-                <!-- <span class="date">Oct 2017 - Dec 2019</span> -->
                 <h3>Deep Learning Engineer</h3>
                 <p><strong>Innoactive Intelligence LLP, Bangalore</strong></p>
             </div>
@@ -234,13 +261,11 @@
             </div>
 
             <div class="item">
-                <!-- <span class="date">Aug 2014 - Jul 2016</span> -->
                 <h3>M. Tech. in Signal Processing</h3>
                 <p><strong>University of Calicut</strong></p>
             </div>
 
             <div class="item">
-                <!-- <span class="date">Aug 2009 - May 2013</span> -->
                 <h3>B. Tech. in Electronics and Communication</h3>
                 <p><strong>JNTU Anantapur</strong></p>
             </div>
@@ -278,9 +303,18 @@
             </div>
         </section>
         
-        <section style="border-bottom: none;">
+        <section>
             <h2 class="section-title">Professional Activities</h2>
             <p><strong>Reviewer:</strong> IEEE ISBI, IEEE INDICON, IDEAL 2025, Frontiers in Neuroscience, Expert Systems with Applications, and Signal, Image and Video Processing.</p>
+        </section>
+
+        <section style="border-bottom: none;">
+            <h2 class="section-title">Collaborators</h2>
+            <div class="collaborator-container">
+                <img src="aneek.jpg" alt="Dr. Aneek Adhya" class="collaborator-photo">
+                <span class="collaborator-name">Dr. Aneek Adhya</span>
+                <span class="collaborator-affiliation">IIT Kharagpur</span>
+            </div>
         </section>
     </div>
 
@@ -290,7 +324,3 @@
 
 </body>
 </html>
-
-
-
-
