@@ -5,230 +5,227 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gowtham Reddy Nimmalapalli | Postdoctoral Fellow</title>
     <style>
-        :root {
-            --primary-color: #2c3e50;
-            --accent-color: #3498db;
-            --bg-color: #f4f7f6;
-            --text-color: #333;
-            --card-bg: #ffffff;
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Header Section */
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 3rem 1rem;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-
-        header p {
-            font-size: 1.2rem;
-            margin-top: 10px;
-            color: #ecf0f1;
-        }
-
-        .contact-info a {
-            color: #bdc3c7;
-            text-decoration: none;
-            margin: 0 10px;
-        }
-
-        .contact-info a:hover {
-            color: white;
+            color: #333333; /* Dark Grey Text */
+            background-color: #ffffff; /* White Background */
         }
 
         /* Layout */
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 2rem 1rem;
+            padding: 0 20px;
         }
 
         section {
-            background: var(--card-bg);
-            margin-bottom: 2rem;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            padding: 50px 0;
+            border-bottom: 1px solid #eeeeee;
         }
 
-        h2 {
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 10px;
-            color: var(--primary-color);
-            margin-top: 0;
+        /* Header */
+        header {
+            background-color: #2c3e50; /* Dark Blue */
+            color: #ffffff;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header h2 {
+            color: #3498db; /* Light Blue */
+            font-size: 1.3rem;
+            font-weight: normal;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            font-size: 1.1rem;
+        }
+        
+        .contact-info a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        /* Headings */
+        h2.section-title {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            border-left: 5px solid #3498db;
+            padding-left: 15px;
         }
 
         h3 {
-            margin-bottom: 5px;
-            color: var(--primary-color);
+            color: #2c3e50;
+            margin-top: 20px;
+            margin-bottom: 10px;
         }
 
-        .subtitle {
-            font-style: italic;
-            color: #666;
-            margin-bottom: 10px;
-            display: block;
+        /* Items */
+        .item {
+            margin-bottom: 25px;
         }
 
         .date {
-            float: right;
-            color: #7f8c8d;
+            font-weight: bold;
+            color: #3498db;
             font-size: 0.9rem;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        /* Mobile Responsiveness */
-        @media (max-width: 600px) {
-            .date {
-                float: none;
-                display: block;
-            }
-        }
-        
-        .tag {
-            background: #e1ecf4;
-            color: #2c3e50;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 0.9em;
-            margin-right: 5px;
-            display: inline-block;
+            display: block;
             margin-bottom: 5px;
+        }
+
+        .tags span {
+            display: inline-block;
+            background: #f1f1f1;
+            padding: 5px 12px;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            margin-right: 5px;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #f8f9fa;
+            color: #666;
+            font-size: 0.9rem;
         }
     </style>
 </head>
 <body>
 
     <header>
-        <h1>Gowtham Reddy Nimmalapalli</h1>
-        <p>Postdoctoral Fellow | Computer Science and Engineering</p>
-        <p>Indian Institute of Technology, Gandhinagar</p>
-        <div class="contact-info">
-            <a href="mailto:gowtham12.reddy@gmail.com">gowtham12.reddy@gmail.com</a>
+        <div class="container">
+            <h1>Gowtham Reddy Nimmalapalli</h1>
+            <h2>Postdoctoral Fellow | Computer Science and Engineering</h2>
+            <p>Indian Institute of Technology, Gandhinagar</p>
+            <div class="contact-info">
+                <span>📧 gowtham12.reddy@gmail.com</span> | 
+                <span>📍 Gandhinagar, India</span>
+            </div>
         </div>
     </header>
 
     <div class="container">
-
         <section>
-            <h2>Research Interests</h2>
-            <p>
-                <span class="tag">Biomedical Signal Processing</span>
-                <span class="tag">Brain Computer Interfaces (BCI)</span>
-                <span class="tag">Machine Learning</span>
-                <span class="tag">Deep Learning</span>
-            </p>
+            <h2 class="section-title">Research Interests</h2>
+            <div class="tags">
+                <span>Biomedical Signal Processing</span>
+                <span>Brain Computer Interfaces</span>
+                <span>Machine Learning</span>
+                <span>Deep Learning</span>
+                <span>AI driven Biomedical Signal Processing</span>
+            </div>
         </section>
 
         <section>
-            <h2>Professional Experience</h2>
+            <h2 class="section-title">Experience</h2>
             
-            <div>
-                <span class="date">Sept 2025 - Present</span>
+            <div class="item">
+                <span class="date">Sep 2025 - Present</span>
                 <h3>Postdoctoral Fellow</h3>
-                <span class="subtitle">Indian Institute of Technology, Gandhinagar</span>
-                <p><strong>Project:</strong> Hybrid BCI for Effective Decision Communication<br>
-                <strong>PI:</strong> Dr. Yogesh Kumar Meena</p>
+                <p><strong>IIT Gandhinagar</strong></p>
+                <p>Hybrid BCI for Effective Decision Communication (PI: Dr. Yogesh Kumar Meena)</p>
             </div>
-            <hr>
 
-            <div>
+            <div class="item">
                 <span class="date">Aug 2021 - Dec 2022</span>
                 <h3>Software Engineer II</h3>
-                <span class="subtitle">Terralogic Software Solutions Pvt. Ltd., Bangalore</span>
+                <p><strong>Terralogic Software Solutions Pvt. Ltd., Bangalore</strong></p>
             </div>
-            <hr>
 
-            <div>
+            <div class="item">
                 <span class="date">Oct 2017 - Dec 2019</span>
                 <h3>Deep Learning Engineer</h3>
-                <span class="subtitle">Innoactive Intelligence LLP, Bangalore</span>
+                <p><strong>Innoactive Intelligence LLP, Bangalore</strong></p>
             </div>
         </section>
 
         <section>
-            <h2>Education</h2>
+            <h2 class="section-title">Education</h2>
             
-            <div>
+            <div class="item">
                 <span class="date">Jan 2020 - Dec 2025</span>
-                <h3>Doctor of Philosophy (Ph.D.)</h3>
-                <span class="subtitle">Indian Institute of Technology Kharagpur, India</span>
-                <p><strong>Field:</strong> AI driven Biomedical Signal Processing<br>
-                <strong>Thesis:</strong> An Integrated Framework for Predicting Epilepsy using EEG Signals<br>
-                <strong>Supervisors:</strong> Dr. Debashree Guha Adhya, Prof. Manjunatha Mahadevappa</p>
+                <h3>Ph.D. in Computer Science</h3>
+                <p><strong>Indian Institute of Technology Kharagpur</strong></p>
+                <p>Thesis: An Integrated Framework for Predicting Epilepsy using EEG Signals</p>
             </div>
-            <hr>
 
-            <div>
-                <span class="date">Aug 2014 - July 2016</span>
-                <h3>M. Tech. (Signal Processing)</h3>
-                <span class="subtitle">University of Calicut, India (CGPA: 8.25/10)</span>
+            <div class="item">
+                <span class="date">Aug 2014 - Jul 2016</span>
+                <h3>M. Tech. in Signal Processing</h3>
+                <p><strong>University of Calicut</strong> (CGPA: 8.25/10)</p>
             </div>
-            <hr>
 
-            <div>
+            <div class="item">
                 <span class="date">Aug 2009 - May 2013</span>
-                <h3>B. Tech. (Electronics and Communication)</h3>
-                <span class="subtitle">JNTU Anantapur, India (79.12%)</span>
+                <h3>B. Tech. in Electronics and Communication</h3>
+                <p><strong>JNTU Anantapur</strong> (79.12%)</p>
             </div>
         </section>
 
         <section>
-            <h2>Selected Publications</h2>
-            <h3>Journals</h3>
-            <ul>
-                <li>Reddy, G., Hait, S. R., Guha, D., & Mahadevappa, M. (2024). Classification of epileptic EEG signals with the utilization of Bonferroni mean based fuzzy pattern tree. <em>Expert Systems with Applications</em>, 239, 122424.</li>
-                <li>Reddy, G., Guha, D., Adhya, A., & Mahadevappa, M. Epilepsy detection using lightweight deep learning model over multilayer synchrosqueeze scalograms. <em>Physiological Measurement</em>. (Under review)</li>
-                <li>Reddy, G., Chowdhury, E., Guha, D., Cheruvu, S. K., & Mahadevappa, M. SEMG-based classification of grasp manipulation activities associated with the upper limb using multi-feature extraction and PCA. <em>Computers and Electrical Engineering</em>. (Under review)</li>
-            </ul>
+            <h2 class="section-title">Publications</h2>
+            
+            <div class="item">
+                <p><strong>• Classification of epileptic EEG signals with the utilization of Bonferroni mean based fuzzy pattern tree</strong></p>
+                <p>Expert Systems with Applications, 239, 122424. (2024)</p>
+            </div>
 
-            <h3>Conferences</h3>
-            <ul>
-                <li>Adatia, S., Reddy, G., Das, M., Guha, D., & Mahadevappa, M. (2025, July). An efficient 1D CNN architecture for multi-channel EEG seizure detection. <em>47th Annual International Conference of the IEEE EMBS</em>.</li>
-                <li>Reddy, G., Guha, D., & Mahadevappa, M. (2024, July). EEG artifact removal using stacked multi-Head attention transformer architecture. <em>46th Annual International Conference of the IEEE EMBS</em>.</li>
-                <li>Reddy, G., Debnath, C., Guha, D., Adhya, A., & Mahadevappa, M. (2024, February). Epileptic EEG signals classification based on multi-criteria decision aid classifier ensemble approach. <em>2024 National Conference on Communications (NCC)</em>.</li>
-            </ul>
+            <div class="item">
+                <p><strong>• Epilepsy detection using lightweight deep learning model over multilayer synchrosqueeze scalograms</strong></p>
+                <p>Physiological Measurement. (Under review)</p>
+            </div>
+
+            <div class="item">
+                <p><strong>• SEMG-based classification of grasp manipulation activities associated with the upper limb...</strong></p>
+                <p>Computers and Electrical Engineering. (Under review)</p>
+            </div>
+
+            <div class="item">
+                <p><strong>• An efficient ID CNN architecture for multi-channel EEG seizure detection</strong></p>
+                <p>Proceedings of the 47th Annual International Conference of the IEEE EMBS. (Presented, July 2025)</p>
+            </div>
+            
+            <div class="item">
+                <p><strong>• EEG artifact removal using stacked multi-Head attention transformer architecture</strong></p>
+                <p>46th Annual International Conference of the IEEE EMBS. (July 2024)</p>
+            </div>
         </section>
 
         <section>
-            <h2>Patents</h2>
-            <ul>
-                <li><strong>A Point-of-Care based System for Generating and Analyzing Tear Fern Patterns.</strong><br> Provisional Patent Application No: 202531029164, Dated: 27/03/2025, Indian Patent.</li>
-                <li><strong>A Real-Time Ultrafast Epilepsy Diagnosis and Artifact Classification System.</strong><br> Application Filed December 2025.</li>
-            </ul>
+            <h2 class="section-title">Patents</h2>
+            <div class="item">
+                <p>1. <strong>A Point-of-Care based System for Generating and Analyzing Tear Fern Patterns</strong> (Provisional No: 202531029164, 2025)</p>
+                <p>2. <strong>A Real-Time Ultrafast Epilepsy Diagnosis and Artifact Classification System</strong> (Application Filled Dec 2025)</p>
+            </div>
         </section>
         
-        <section>
-            <h2>Professional Activities</h2>
-            <p><strong>Reviewer for:</strong> IEEE ISBI 2025, IEEE INDICON 2025, IDEAL 2025, Frontiers in Neuroscience, and Expert Systems with Applications.</p>
+        <section style="border-bottom: none;">
+            <h2 class="section-title">Professional Activities</h2>
+            <p><strong>Reviewer:</strong> IEEE ISBI 2025, IEEE INDICON 2025, IDEAL 2025, Frontiers in Neuroscience, Expert Systems with Applications.</p>
         </section>
-
     </div>
 
-    <footer style="text-align: center; padding: 20px; color: #7f8c8d; font-size: 0.9rem;">
-        &copy; 2026 Gowtham Reddy Nimmalapalli. Hosted on GitHub Pages.
+    <footer>
+        <p>&copy; 2026 Gowtham Reddy Nimmalapalli</p>
     </footer>
 
 </body>
