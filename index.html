@@ -3,481 +3,497 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Gowtham Reddy Nimmalapalli | Postdoctoral Fellow</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Dr. Gowtham Reddy Nimmalapalli | Postdoctoral Fellow — IIT Gandhinagar</title>
+    <meta name="description" content="Academic portfolio of Dr. Gowtham Reddy Nimmalapalli — Postdoctoral Fellow at IIT Gandhinagar specializing in AI-driven biomedical signal processing, brain-computer interfaces, and deep learning.">
+    <meta name="keywords" content="Gowtham Reddy, IIT Gandhinagar, BCI, EEG, biomedical signal processing, deep learning, epilepsy, postdoctoral fellow">
+    <meta name="author" content="Dr. Gowtham Reddy Nimmalapalli">
+
+    <!-- Fonts & Icons -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-    <style>
-        /* Basic Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
 
-        body {
-            line-height: 1.6;
-            color: #333333;
-            background-color: #ffffff;
-        }
-
-        /* TAB NAVIGATION STYLING */
-        .navbar {
-            background-color: #34495e;
-            width: 100%;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .tab-container {
-            max-width: 1100px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 20px;
-        }
-
-        .nav-brand-link {
-            text-decoration: none !important;
-            color: #ffffff !important;
-            transition: 0.3s;
-        }
-
-        .nav-brand-link:hover {
-            color: #3498db !important;
-        }
-
-        .nav-brand {
-            font-size: 1.1rem;
-            font-weight: 700;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            cursor: pointer;
-            padding: 15px 0;
-        }
-
-        .nav-buttons {
-            display: flex;
-        }
-
-        .tab-button {
-            background: none;
-            border: none;
-            color: white;
-            padding: 20px 15px;
-            cursor: pointer;
-            font-size: 0.95rem;
-            font-weight: 500;
-            transition: 0.3s;
-        }
-
-        .tab-button:hover, .tab-button.active {
-            background-color: #3498db;
-        }
-
-        /* Layout */
-        .container {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-
-        section {
-            padding: 50px 0;
-            border-bottom: 1px solid #eeeeee;
-        }
-
-        header {
-            background-color: #2c3e50;
-            color: #ffffff;
-            padding: 60px 0;
-        }
-
-        .header-flex {
-            display: flex;
-            align-items: flex-start;
-            gap: 40px;
-            flex-wrap: wrap;
-        }
-
-        .header-left {
-            flex: 1;
-            min-width: 280px;
-            text-align: center;
-        }
-
-        .header-right {
-            flex: 2;
-            min-width: 300px;
-        }
-
-        .profile-photo {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 5px solid #3498db;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        }
-
-        header h1 { font-size: 2.2rem; margin-bottom: 10px; }
-        header h2 { color: #3498db; font-size: 1.2rem; font-weight: normal; }
-
-        .contact-info { margin-top: 20px; font-size: 1rem; }
-        .contact-info a { color: #ffffff; text-decoration: none; margin: 0 10px; transition: 0.3s; }
-        .contact-info a:hover { color: #3498db; }
-
-        .social-links { margin-top: 20px; font-size: 2.2rem; }
-        .social-links a { text-decoration: none; margin: 0 15px; transition: 0.3s; display: inline-block; }
-        .social-links a:hover { transform: translateY(-5px); opacity: 0.8; }
-        .link-linkedin { color: #0077b5; }
-        .link-scholar { color: #4285f4; }
-        .link-orcid { color: #A6CE39; }
-
-        .research-text-header { text-align: justify; font-size: 1.05rem; color: #ecf0f1; line-height: 1.8; }
-
-        h2.section-title {
-            color: #2c3e50;
-            margin-bottom: 20px;
-            border-left: 5px solid #3498db;
-            padding-left: 15px;
-        }
-
-        h3 {
-            color: #2c3e50;
-            margin-top: 20px;
-            margin-bottom: 10px;
-        }
-
-        .item { margin-bottom: 25px; }
-        .date { font-weight: bold; color: #3498db; font-size: 0.9rem; display: block; margin-bottom: 5px; }
-
-        .tags span {
-            display: inline-block;
-            background: #f1f1f1;
-            padding: 5px 12px;
-            border-radius: 15px;
-            font-size: 0.9rem;
-            margin-right: 5px;
-            margin-bottom: 5px;
-            color: #333;
-        }
-
-        .collaborators-grid {
-            display: flex;
-            flex-wrap: wrap;     
-            gap: 50px;           
-            margin-top: 30px;
-        }
-
-        .collaborator-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 180px;        
-            text-align: center;
-        }
-
-        .collaborator-photo {
-            width: 150px;
-            height: 150px;
-            object-fit: cover;
-            border-radius: 8px;
-            margin-bottom: 12px;
-            border: 1px solid #ddd;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        }
-
-        .collaborator-name { font-weight: bold; color: #2c3e50; font-size: 1.1rem; margin-bottom: 4px; }
-        .collaborator-affiliation { color: #666; font-size: 0.9rem; line-height: 1.2; }
-
-        .supervisor-link {
-            color: #2c3e50;
-            text-decoration: none;
-            border-bottom: 1px dashed #3498db;
-            font-weight: 500;
-        }
-        
-        .supervisor-link:hover {
-            color: #3498db;
-            border-bottom: 1px solid #3498db;
-        }
-
-        .tab-content { display: none; }
-        
-        footer { text-align: center; padding: 30px; background: #f8f9fa; color: #666; font-size: 0.9rem; }
-
-        @media (max-width: 850px) {
-            .tab-container { flex-direction: column; padding: 10px; }
-            .nav-brand { padding: 5px 0; }
-        }
-
-        /* Small Mobile Portrait Adjustment */
-        @media (max-width: 480px) {
-            .nav-buttons {
-                display: flex;
-                overflow-x: auto;
-                white-space: nowrap;
-                -webkit-overflow-scrolling: touch;
-                width: 100%;
-                justify-content: flex-start;
-            }
-            
-            .nav-buttons::-webkit-scrollbar {
-                display: none;
-            }
-
-            .tab-button { 
-                padding: 12px 10px; 
-                font-size: 0.8rem; 
-                flex: 0 0 auto; 
-            }
-
-            .nav-brand { 
-                font-size: 0.8rem; 
-                padding: 10px 0;
-                display: block;
-                width: 100%;
-                text-align: center;
-            }
-
-            .tab-container {
-                flex-direction: column;
-                padding: 0 10px;
-            }
-
-            .collaborator-photo { width: 120px; height: 120px; }
-            .collaborator-container { width: 140px; }
-            .profile-photo { width: 130px; height: 130px; }
-        }
-    </style>
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="tab-container">
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
             <a href="javascript:void(0)" class="nav-brand-link" onclick="showHome()">
-                <div class="nav-brand">DR. GOWTHAM REDDY NIMMALAPALLI</div>
+                <span class="nav-brand-dot"></span>
+                <span class="nav-brand">Dr. Gowtham Reddy</span>
             </a>
-            
-            <div class="nav-buttons">
-                <button class="tab-button active" onclick="showHome()">Home</button>
-                <button class="tab-button" onclick="openTab(event, 'publications')">Publications</button>
-                <button class="tab-button" onclick="openTab(event, 'experience')">Experience</button>
-                <button class="tab-button" onclick="openTab(event, 'collaborators')">Collaborators</button>
+
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <div class="nav-links">
+                <button class="nav-link active" data-tab="home" onclick="openTab('home')">
+                    <i class="fas fa-home" style="margin-right:5px;"></i>Home
+                </button>
+                <button class="nav-link" data-tab="publications" onclick="openTab('publications')">
+                    <i class="fas fa-book" style="margin-right:5px;"></i>Publications
+                </button>
+                <button class="nav-link" data-tab="projects" onclick="openTab('projects')">
+                    <i class="fas fa-diagram-project" style="margin-right:5px;"></i>Projects
+                </button>
+                <button class="nav-link" data-tab="experience" onclick="openTab('experience')">
+                    <i class="fas fa-briefcase" style="margin-right:5px;"></i>Experience
+                </button>
+                <button class="nav-link" data-tab="gallery" onclick="openTab('gallery')">
+                    <i class="fas fa-images" style="margin-right:5px;"></i>Gallery
+                </button>
+                <button class="nav-link" data-tab="collaborators" onclick="openTab('collaborators')">
+                    <i class="fas fa-users" style="margin-right:5px;"></i>Collaborators
+                </button>
             </div>
         </div>
     </nav>
 
-    <div id="home-content" class="tab-content" style="display: block;">
-        <header>
-            <div class="container header-flex">
-                <div class="header-left">
-                    <img src="profile.png" alt="Dr. Gowtham Reddy Nimmalapalli" class="profile-photo">
-                    <h1>Dr. Gowtham Reddy Nimmalapalli</h1>
-                    <h2>Postdoctoral Fellow</h2>
-                    <h2>IIT Gandhinagar</h2>
-                    
-                    <div class="contact-info">
-                        <a href="mailto:gowtham12.reddy@gmail.com"><i class="fas fa-envelope"></i> gowtham12.reddy@gmail.com</a>
+    <!-- ==================== HOME TAB ==================== -->
+    <div id="home" class="tab-panel active">
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+            <div class="hero-orb hero-orb-1"></div>
+            <div class="hero-orb hero-orb-2"></div>
+            <div class="hero-orb hero-orb-3"></div>
+
+            <div class="hero-content">
+                <!-- Profile Card -->
+                <div class="profile-card">
+                    <div class="profile-photo-wrapper">
+                        <img src="profile.png" alt="Dr. Gowtham Reddy Nimmalapalli" class="profile-photo">
                     </div>
+                    <h1 class="profile-name">Dr. Gowtham Reddy Nimmalapalli</h1>
+                    <p class="profile-title">Postdoctoral Fellow</p>
+                    <p class="profile-affiliation">IIT Gandhinagar</p>
+
+                    <a href="mailto:gowtham12.reddy@gmail.com" class="profile-email">
+                        <i class="fas fa-envelope"></i>
+                        gowtham12.reddy@gmail.com
+                    </a>
 
                     <div class="social-links">
-                        <a href="https://www.linkedin.com/in/dr-gowtham-reddy-n-4098376b/" target="_blank" title="LinkedIn" class="link-linkedin">
-                            <i class="fab fa-linkedin"></i>
+                        <a href="https://www.linkedin.com/in/dr-gowtham-reddy-n-4098376b/" target="_blank" title="LinkedIn" class="social-link linkedin">
+                            <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="https://scholar.google.com/citations?user=1KALulcAAAAJ&hl=en" target="_blank" title="Google Scholar" class="link-scholar">
+                        <a href="https://scholar.google.com/citations?user=1KALulcAAAAJ&hl=en" target="_blank" title="Google Scholar" class="social-link scholar">
                             <i class="fas fa-graduation-cap"></i>
                         </a>
-                        <a href="https://orcid.org/0000-0002-2358-1720" target="_blank" title="ORCID" class="link-orcid">
+                        <a href="https://orcid.org/0000-0002-2358-1720" target="_blank" title="ORCID" class="social-link orcid">
                             <i class="ai ai-orcid"></i>
                         </a>
                     </div>
                 </div>
 
-                <div class="header-right">
-                    <p class="research-text-header">
+                <!-- Hero Text -->
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span class="hero-badge-dot"></span>
+                        Open to Collaborations
+                    </div>
+                    <h2 class="hero-heading">
+                        Advancing <span class="gradient-text">AI-Driven Healthcare</span> Through Intelligent Signal Processing
+                    </h2>
+                    <p class="hero-description">
                         I actively conduct research in AI-driven biomedical signal processing, brain–computer interfaces, and intelligent medical decision-making. My work focuses on developing efficient, interpretable, and real-time decision support systems for healthcare applications. I design novel feature representation and multimodal fusion strategies to model complex interactions in non-stationary biosignals such as EEG and sEMG. I explore attention-based deep learning, time–frequency analysis, and ensemble frameworks to extract clinically meaningful patterns from uncertain data. I also develop lightweight models suitable for point-of-care deployment. Currently, I work on hybrid BCI systems for effective decision communication. My long-term goal is to build trustworthy AI systems for neurological healthcare and assistive technologies.
                     </p>
                 </div>
             </div>
-        </header>
+        </section>
 
-        <div class="container">
-            <section>
-                <h2 class="section-title">Current Position</h2>
-                <div class="item">
-                    <span class="date">September 2025 - Present</span>
-                    <h3>Postdoctoral Fellow</h3>
-                    <p><strong>Indian Institute of Technology Gandhinagar</strong></p>
-                    <p>Project: Hybrid BCI for Effective Decision Communication</p>
-                    <p>Principal Investigator: <a href="https://scholar.google.co.in/citations?user=5xxepFkAAAAJ&hl=en" target="_blank" class="supervisor-link">Dr. Yogesh Kumar Meena</a></p>
-                </div>
-            </section>
-            
-            <section>
-                <h2 class="section-title">Research Interests</h2>
-                <div class="tags">
-                    <span>Biomedical Signal Processing</span>
-                    <span>Brain Computer Interfaces</span>
-                    <span>Machine Learning</span>
-                    <span>Deep Learning</span>
-                </div>
-            </section>
+        <!-- HOME CONTENT -->
+        <div class="main-content">
+            <div class="content-container">
 
-            <section style="border-bottom: none;">
-                <h2 class="section-title">Education</h2>
-                <div class="item">
-                    <span class="date">Jan 2020 - Dec 2025</span>
-                    <h3>Ph.D. in School of Medical Science and Technology</h3>
-                    <p><strong>Indian Institute of Technology Kharagpur</strong></p>
-                    <p>Thesis: An Integrated Framework for Predicting Epilepsy using EEG Signals</p>
-                    <p>Supervisor: <a href="https://scholar.google.com/citations?user=tD8YpZUAAAAJ&hl=en" target="_blank" class="supervisor-link">Dr. Debashree Guha Adhya</a>; Co-supervisor: <a href="https://scholar.google.com/citations?user=k0MoQ9UAAAAJ&hl=en" target="_blank" class="supervisor-link">Prof. Manjunatha Mahadevappa</a></p>
+                <!-- Stats Bar -->
+                <div class="stats-bar reveal">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="3" data-suffix="+">0</div>
+                        <div class="stat-label">Publications</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="2" data-suffix="">0</div>
+                        <div class="stat-label">Patents</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="5" data-suffix="+">0</div>
+                        <div class="stat-label">Collaborators</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="6" data-suffix="+">0</div>
+                        <div class="stat-label">Years Research</div>
+                    </div>
                 </div>
-                <div class="item">
-                    <h3>M. Tech. in Signal Processing</h3>
-                    <p><strong>University of Calicut</strong></p>
+
+                <!-- Current Position -->
+                <div class="section reveal">
+                    <div class="section-header">
+                        <div class="section-icon"><i class="fas fa-flask"></i></div>
+                        <div>
+                            <h2 class="section-title">Current Position</h2>
+                            <p class="section-subtitle">Present academic appointment</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card">
+                        <div class="card-meta">
+                            <span class="card-date">September 2025 — Present</span>
+                            <span class="card-badge badge-current">● Current</span>
+                        </div>
+                        <h3 class="card-title">Postdoctoral Fellow</h3>
+                        <p class="card-org">Indian Institute of Technology Gandhinagar</p>
+                        <p class="card-desc">
+                            Project: Hybrid BCI for Effective Decision Communication<br>
+                            Principal Investigator: <a href="https://scholar.google.co.in/citations?user=5xxepFkAAAAJ&hl=en" target="_blank">Dr. Yogesh Kumar Meena</a>
+                        </p>
+                    </div>
                 </div>
-                <div class="item">
-                    <h3>B. Tech. in Electronics and Communication</h3>
-                    <p><strong>JNTU Anantapur</strong></p>
+
+                <!-- Research Interests -->
+                <div class="section reveal">
+                    <div class="section-header">
+                        <div class="section-icon"><i class="fas fa-atom"></i></div>
+                        <div>
+                            <h2 class="section-title">Research Interests</h2>
+                            <p class="section-subtitle">Core research domains &amp; expertise</p>
+                        </div>
+                    </div>
+
+                    <div class="tags-grid stagger">
+                        <span class="tag"><i class="fas fa-brain"></i> Biomedical Signal Processing</span>
+                        <span class="tag"><i class="fas fa-project-diagram"></i> Brain Computer Interfaces</span>
+                        <span class="tag"><i class="fas fa-robot"></i> Machine Learning</span>
+                        <span class="tag"><i class="fas fa-network-wired"></i> Deep Learning</span>
+                        <span class="tag"><i class="fas fa-wave-square"></i> EEG Analysis</span>
+                        <span class="tag"><i class="fas fa-heartbeat"></i> Healthcare AI</span>
+                        <span class="tag"><i class="fas fa-microscope"></i> Time-Frequency Analysis</span>
+                        <span class="tag"><i class="fas fa-laptop-medical"></i> Point-of-Care Systems</span>
+                    </div>
                 </div>
-            </section>
+
+                <!-- Education -->
+                <div class="section reveal">
+                    <div class="section-header">
+                        <div class="section-icon"><i class="fas fa-graduation-cap"></i></div>
+                        <div>
+                            <h2 class="section-title">Education</h2>
+                            <p class="section-subtitle">Academic qualifications</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card">
+                        <div class="card-meta">
+                            <span class="card-date">Jan 2020 — Dec 2025</span>
+                        </div>
+                        <h3 class="card-title">Ph.D. in School of Medical Science and Technology</h3>
+                        <p class="card-org">Indian Institute of Technology Kharagpur</p>
+                        <p class="card-desc">
+                            Thesis: An Integrated Framework for Predicting Epilepsy using EEG Signals<br>
+                            Supervisor: <a href="https://scholar.google.com/citations?user=tD8YpZUAAAAJ&hl=en" target="_blank">Dr. Debashree Guha Adhya</a> &nbsp;|&nbsp;
+                            Co-supervisor: <a href="https://scholar.google.com/citations?user=k0MoQ9UAAAAJ&hl=en" target="_blank">Prof. Manjunatha Mahadevappa</a>
+                        </p>
+                    </div>
+
+                    <div class="glass-card">
+                        <h3 class="card-title">M. Tech. in Signal Processing</h3>
+                        <p class="card-org">University of Calicut</p>
+                    </div>
+
+                    <div class="glass-card">
+                        <h3 class="card-title">B. Tech. in Electronics and Communication</h3>
+                        <p class="card-org">JNTU Anantapur</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div id="publications" class="tab-content">
-        <div class="container">
-            <section>
-                <h2 class="section-title">Publications</h2>
-                <div class="item">
-                    <p><strong>• Classification of epileptic EEG signals with the utilization of Bonferroni mean based fuzzy pattern tree</strong></p>
-                    <p>Expert Systems with Applications, 239, 122424. (2024)</p>
-                </div>
-                <div class="item">
-                    <p><strong>• An efficient ID CNN architecture for multi-channel EEG seizure detection</strong></p>
-                    <p>Proceedings of the 47th Annual International Conference of the IEEE EMBS. (Presented, July 2025)</p>
-                </div>
-                <div class="item">
-                    <p><strong>• EEG artifact removal using stacked multi-Head attention transformer architecture</strong></p>
-                    <p>46th Annual International Conference of the IEEE EMBS. (July 2024)</p>
-                </div>
-            </section>
+    <!-- ==================== PUBLICATIONS TAB ==================== -->
+    <div id="publications" class="tab-panel">
+        <div class="main-content">
+            <div class="content-container">
 
-            <section style="border-bottom: none;">
-                <h2 class="section-title">Patents</h2>
-                <div class="item">
-                    <p>1. <strong>A Point-of-Care based System for Generating and Analyzing Tear Fern Patterns</strong> (Provisional No: 202531029164, 2025)</p>
-                    <p>2. <strong>A Real-Time Ultrafast Epilepsy Diagnosis and Artifact Classification System</strong> (Application Filled Dec 2025)</p>
+                <div class="section reveal">
+                    <div class="section-header">
+                        <div class="section-icon"><i class="fas fa-file-alt"></i></div>
+                        <div>
+                            <h2 class="section-title">Publications</h2>
+                            <p class="section-subtitle">Peer-reviewed journal articles &amp; conference papers</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card pub-card">
+                        <span class="pub-number">JOURNAL ARTICLE</span>
+                        <h3 class="pub-title">Classification of epileptic EEG signals with the utilization of Bonferroni mean based fuzzy pattern tree</h3>
+                        <p class="pub-venue">Expert Systems with Applications, 239, 122424. <span class="year">(2024)</span></p>
+                    </div>
+
+                    <div class="glass-card pub-card">
+                        <span class="pub-number">CONFERENCE PAPER</span>
+                        <h3 class="pub-title">An efficient 1D CNN architecture for multi-channel EEG seizure detection</h3>
+                        <p class="pub-venue">Proceedings of the 47th Annual International Conference of the IEEE EMBS. <span class="year">(Presented, July 2025)</span></p>
+                    </div>
+
+                    <div class="glass-card pub-card">
+                        <span class="pub-number">CONFERENCE PAPER</span>
+                        <h3 class="pub-title">EEG artifact removal using stacked multi-Head attention transformer architecture</h3>
+                        <p class="pub-venue">46th Annual International Conference of the IEEE EMBS. <span class="year">(July 2024)</span></p>
+                    </div>
                 </div>
-            </section>
+
+                <div class="section reveal">
+                    <div class="section-header">
+                        <div class="section-icon"><i class="fas fa-lightbulb"></i></div>
+                        <div>
+                            <h2 class="section-title">Patents</h2>
+                            <p class="section-subtitle">Intellectual property &amp; innovations</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card">
+                        <div class="card-meta">
+                            <span class="card-date">Provisional No: 202531029164, 2025</span>
+                        </div>
+                        <h3 class="card-title">A Point-of-Care based System for Generating and Analyzing Tear Fern Patterns</h3>
+                    </div>
+
+                    <div class="glass-card">
+                        <div class="card-meta">
+                            <span class="card-date">Application Filed Dec 2025</span>
+                        </div>
+                        <h3 class="card-title">A Real-Time Ultrafast Epilepsy Diagnosis and Artifact Classification System</h3>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div id="experience" class="tab-content">
-        <div class="container">
-            <section>
-                <h2 class="section-title">Experience</h2>
-                <div class="item">
-                    <h3>Software Engineer II</h3>
-                    <p><strong>Terralogic Software Solutions Pvt. Ltd., Bangalore</strong></p>
-                </div>
-                <div class="item">
-                    <h3>Deep Learning Engineer</h3>
-                    <p><strong>Innoactive Intelligence LLP, Bangalore</strong></p>
-                </div>
-            </section>
+    <!-- ==================== PROJECTS TAB ==================== -->
+    <div id="projects" class="tab-panel">
+        <div class="main-content">
+            <div class="content-container">
 
-            <section style="border-bottom: none;">
-                <h2 class="section-title">Professional Activities</h2>
-                <p><strong>Reviewer:</strong> IEEE ISBI, IEEE INDICON, IDEAL 2025, Frontiers in Neuroscience, Expert Systems with Applications, and Signal, Image and Video Processing.</p>
-            </section>
+                <div class="section reveal">
+                    <div class="section-header">
+                        <div class="section-icon"><i class="fas fa-diagram-project"></i></div>
+                        <div>
+                            <h2 class="section-title">Research Projects</h2>
+                            <p class="section-subtitle">Current &amp; completed research projects</p>
+                        </div>
+                    </div>
+
+                    <div class="projects-grid stagger">
+                        <div class="glass-card project-card">
+                            <div class="project-icon"><i class="fas fa-brain"></i></div>
+                            <div class="card-meta">
+                                <span class="card-badge badge-current">● Active</span>
+                            </div>
+                            <h3 class="card-title">Hybrid BCI for Effective Decision Communication</h3>
+                            <p class="card-org">IIT Gandhinagar</p>
+                            <p class="card-desc">Developing hybrid brain-computer interface systems that combine multiple neural signal modalities for robust and reliable decision communication in assistive technology applications.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">BCI</span>
+                                <span class="project-tag">EEG</span>
+                                <span class="project-tag">sEMG</span>
+                                <span class="project-tag">Hybrid Systems</span>
+                            </div>
+                        </div>
+
+                        <div class="glass-card project-card">
+                            <div class="project-icon"><i class="fas fa-bolt"></i></div>
+                            <h3 class="card-title">Integrated Framework for Predicting Epilepsy using EEG</h3>
+                            <p class="card-org">IIT Kharagpur — Ph.D. Thesis</p>
+                            <p class="card-desc">Designed an end-to-end framework integrating artifact removal, feature extraction using time-frequency analysis, and seizure classification using fuzzy pattern trees and 1D CNNs.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Epilepsy</span>
+                                <span class="project-tag">EEG</span>
+                                <span class="project-tag">Deep Learning</span>
+                                <span class="project-tag">Fuzzy Logic</span>
+                            </div>
+                        </div>
+
+                        <div class="glass-card project-card">
+                            <div class="project-icon"><i class="fas fa-wand-magic-sparkles"></i></div>
+                            <h3 class="card-title">EEG Artifact Removal Using Transformer Architecture</h3>
+                            <p class="card-org">IIT Kharagpur</p>
+                            <p class="card-desc">Developed a stacked multi-head attention transformer model for automated identification and removal of various artifacts from EEG recordings in real-time.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Transformer</span>
+                                <span class="project-tag">Attention</span>
+                                <span class="project-tag">Artifact Removal</span>
+                            </div>
+                        </div>
+
+                        <div class="glass-card project-card">
+                            <div class="project-icon"><i class="fas fa-eye"></i></div>
+                            <h3 class="card-title">Point-of-Care Tear Fern Pattern Analysis</h3>
+                            <p class="card-org">IIT Kharagpur</p>
+                            <p class="card-desc">Built a portable system for automated tear fern pattern generation and classification for dry eye disease diagnosis using image processing and machine learning.</p>
+                            <div class="project-tags">
+                                <span class="project-tag">Point-of-Care</span>
+                                <span class="project-tag">Image Processing</span>
+                                <span class="project-tag">Medical Device</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div id="collaborators" class="tab-content">
-        <div class="container">
-            <section style="border-bottom: none;">
-                <h2 class="section-title">Collaborators</h2>
-                <div class="collaborators-grid">
-                    <div class="collaborator-container">
-                        <img src="Debashree.jpg" alt="Dr. Debashree Guha Adhya" class="collaborator-photo">
-                        <span class="collaborator-name">Dr. Debashree Guha Adhya</span>
-                        <span class="collaborator-affiliation">IIT Kharagpur</span>
+    <!-- ==================== EXPERIENCE TAB ==================== -->
+    <div id="experience" class="tab-panel">
+        <div class="main-content">
+            <div class="content-container">
+
+                <div class="section reveal">
+                    <div class="section-header">
+                        <div class="section-icon"><i class="fas fa-briefcase"></i></div>
+                        <div>
+                            <h2 class="section-title">Professional Experience</h2>
+                            <p class="section-subtitle">Industry &amp; research positions</p>
+                        </div>
                     </div>
-                    <div class="collaborator-container">
-                        <img src="Manjunatha.jpeg" alt="Prof. Manjunatha Mahadevappa" class="collaborator-photo">
-                        <span class="collaborator-name">Prof. Manjunatha Mahadevappa</span>
-                        <span class="collaborator-affiliation">IIT Kharagpur</span>
-                    </div>
-                    <div class="collaborator-container">
-                        <img src="aneek.png" alt="Dr. Aneek Adhya" class="collaborator-photo">
-                        <span class="collaborator-name">Dr. Aneek Adhya</span>
-                        <span class="collaborator-affiliation">IIT Kharagpur</span>
-                    </div>
-                    <div class="collaborator-container">
-                        <img src="debjani.jpg" alt="Prof. Debjani Chakraborty" class="collaborator-photo">
-                        <span class="collaborator-name">Prof. Debjani Chakraborty</span>
-                        <span class="collaborator-affiliation">IIT Kharagpur</span>
-                    </div>
-                    <div class="collaborator-container">
-                        <img src="Yogesh.jpg" alt="Dr. Yogesh Kumar Meena" class="collaborator-photo">
-                        <span class="collaborator-name">Dr. Yogesh Kumar Meena</span>
-                        <span class="collaborator-affiliation">IIT Gandhinagar</span>
+
+                    <div class="timeline stagger">
+                        <div class="timeline-item">
+                            <div class="glass-card">
+                                <div class="card-meta">
+                                    <span class="card-badge badge-current">● Current</span>
+                                </div>
+                                <h3 class="card-title">Postdoctoral Fellow</h3>
+                                <p class="card-org">Indian Institute of Technology Gandhinagar</p>
+                                <p class="card-desc">Hybrid BCI for Effective Decision Communication</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="glass-card">
+                                <h3 class="card-title">Software Engineer II</h3>
+                                <p class="card-org">Terralogic Software Solutions Pvt. Ltd., Bangalore</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="glass-card">
+                                <h3 class="card-title">Deep Learning Engineer</h3>
+                                <p class="card-org">Innoactive Intelligence LLP, Bangalore</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
+
+                <div class="section reveal">
+                    <div class="section-header">
+                        <div class="section-icon"><i class="fas fa-pen-fancy"></i></div>
+                        <div>
+                            <h2 class="section-title">Professional Activities</h2>
+                            <p class="section-subtitle">Academic service &amp; community engagement</p>
+                        </div>
+                    </div>
+
+                    <div class="glass-card">
+                        <h3 class="card-title" style="margin-bottom: 14px;">Peer Reviewer</h3>
+                        <div class="tags-grid">
+                            <span class="tag">IEEE ISBI</span>
+                            <span class="tag">IEEE INDICON</span>
+                            <span class="tag">IDEAL 2025</span>
+                            <span class="tag">Frontiers in Neuroscience</span>
+                            <span class="tag">Expert Systems with Applications</span>
+                            <span class="tag">Signal, Image and Video Processing</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-    <footer>
-        <p>&copy; 2026 Gowtham Reddy Nimmalapalli</p>
+    <!-- ==================== GALLERY TAB ==================== -->
+    <div id="gallery" class="tab-panel">
+        <div class="main-content">
+            <div class="content-container">
+
+                <!-- Gallery section -->
+                <div class="section reveal">
+                    <div class="section-header">
+                        <div class="section-icon"><i class="fas fa-images"></i></div>
+                        <div>
+                            <h2 class="section-title">Gallery</h2>
+                            <p class="section-subtitle">Moments from conferences, workshops &amp; lab</p>
+                        </div>
+                    </div>
+
+                    <div class="empty-state">
+                        <i class="fas fa-camera-retro"></i>
+                        <p>Gallery photos coming soon.<br>Check back for snapshots from conferences, workshops, and lab activities.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== COLLABORATORS TAB ==================== -->
+    <div id="collaborators" class="tab-panel">
+        <div class="main-content">
+            <div class="content-container">
+                <div class="section reveal">
+                    <div class="section-header">
+                        <div class="section-icon"><i class="fas fa-handshake"></i></div>
+                        <div>
+                            <h2 class="section-title">Collaborators</h2>
+                            <p class="section-subtitle">Research collaborators &amp; mentors</p>
+                        </div>
+                    </div>
+
+                    <div class="collab-grid stagger">
+                        <div class="collab-card">
+                            <img src="Debashree.jpg" alt="Dr. Debashree Guha Adhya" class="collab-photo">
+                            <p class="collab-name">Dr. Debashree Guha Adhya</p>
+                            <p class="collab-affiliation">IIT Kharagpur</p>
+                        </div>
+
+                        <div class="collab-card">
+                            <img src="Manjunatha.jpeg" alt="Prof. Manjunatha Mahadevappa" class="collab-photo">
+                            <p class="collab-name">Prof. Manjunatha Mahadevappa</p>
+                            <p class="collab-affiliation">IIT Kharagpur</p>
+                        </div>
+
+                        <div class="collab-card">
+                            <img src="aneek.png" alt="Dr. Aneek Adhya" class="collab-photo">
+                            <p class="collab-name">Dr. Aneek Adhya</p>
+                            <p class="collab-affiliation">IIT Kharagpur</p>
+                        </div>
+
+                        <div class="collab-card">
+                            <img src="debjani.jpg" alt="Prof. Debjani Chakraborty" class="collab-photo">
+                            <p class="collab-name">Prof. Debjani Chakraborty</p>
+                            <p class="collab-affiliation">IIT Kharagpur</p>
+                        </div>
+
+                        <div class="collab-card">
+                            <img src="Yogesh.jpg" alt="Dr. Yogesh Kumar Meena" class="collab-photo">
+                            <p class="collab-name">Dr. Yogesh Kumar Meena</p>
+                            <p class="collab-affiliation">IIT Gandhinagar</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <p>&copy; 2026 Dr. Gowtham Reddy Nimmalapalli &nbsp;•&nbsp; Built with passion for science</p>
     </footer>
 
-    <script>
-        function showHome() {
-            var i, tabcontent, tablinks;
-            
-            // Hide all tab contents
-            tabcontent = document.getElementsByClassName("tab-content");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-            
-            // Remove active class from all buttons
-            tablinks = document.getElementsByClassName("tab-button");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-            
-            // Show home and make home button active
-            document.getElementById("home-content").style.display = "block";
-            event.currentTarget.className += " active";
-        }
-
-        function openTab(evt, tabName) {
-            var i, tabcontent, tablinks;
-            
-            // Hide all tab contents
-            tabcontent = document.getElementsByClassName("tab-content");
-            for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.display = "none";
-            }
-
-            // Remove active class from all buttons
-            tablinks = document.getElementsByClassName("tab-button");
-            for (i = 0; i < tablinks.length; i++) {
-                tablinks[i].className = tablinks[i].className.replace(" active", "");
-            }
-
-            // Show current tab, add active class to the button
-            document.getElementById(tabName).style.display = "block";
-            evt.currentTarget.className += " active";
-        }
-    </script>
+    <!-- Script -->
+    <script src="script.js"></script>
 </body>
 </html>
