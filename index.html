@@ -1,4 +1,1280 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Gowtham Reddy Nimmalapalli | Postdoctoral Fellow</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Source+Sans+3:wght@300;400;500;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <style>
+        :root {
+            --navy: #1a2744;
+            --navy-light: #243257;
+            --gold: #b8973a;
+            --gold-light: #d4ae52;
+            --cream: #faf8f3;
+            --warm-white: #ffffff;
+            --text-dark: #1a1a2e;
+            --text-mid: #3d4461;
+            --text-light: #6b7394;
+            --border: #e2ddd4;
+            --section-bg: #f5f3ee;
+            --tag-bg: #edeae2;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html { scroll-behavior: smooth; }
+
+        body {
+            font-family: 'Source Sans 3', sans-serif;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background-color: var(--cream);
+        }
+
+        /* ─── HEADER ─── */
+        header {
+            background: var(--navy);
+            background-image:
+                radial-gradient(ellipse at 20% 50%, rgba(184,151,58,0.08) 0%, transparent 60%),
+                radial-gradient(ellipse at 80% 20%, rgba(184,151,58,0.05) 0%, transparent 50%);
+            color: #fff;
+            padding: 60px 0 50px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold));
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            bottom: -1px; left: 0; right: 0;
+            height: 30px;
+            background: var(--cream);
+            clip-path: ellipse(55% 100% at 50% 100%);
+        }
+
+        .header-inner {
+            max-width: 1040px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: flex;
+            align-items: flex-start;
+            gap: 50px;
+        }
+
+        .header-photo-col {
+            flex: 0 0 auto;
+            text-align: center;
+        }
+
+        .profile-photo {
+            width: 168px;
+            height: 168px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--gold);
+            display: block;
+            margin: 0 auto 18px;
+            box-shadow: 0 6px 30px rgba(0,0,0,0.35);
+        }
+
+        .photo-initials {
+            width: 168px;
+            height: 168px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--navy-light), #2d3d6e);
+            border: 4px solid var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'EB Garamond', serif;
+            font-size: 3rem;
+            color: var(--gold-light);
+            margin: 0 auto 18px;
+            box-shadow: 0 6px 30px rgba(0,0,0,0.35);
+            letter-spacing: 2px;
+        }
+
+        .header-name {
+            font-family: 'EB Garamond', serif;
+            font-size: 1.65rem;
+            font-weight: 600;
+            color: #fff;
+            line-height: 1.3;
+        }
+
+        .header-title {
+            font-size: 0.88rem;
+            color: var(--gold-light);
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            margin-top: 6px;
+        }
+
+        .header-inst {
+            font-size: 0.88rem;
+            color: rgba(255,255,255,0.6);
+            margin-top: 2px;
+        }
+
+        .header-contact {
+            margin-top: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            align-items: center;
+        }
+
+        .header-contact a {
+            color: rgba(255,255,255,0.75);
+            text-decoration: none;
+            font-size: 0.82rem;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            transition: color 0.2s;
+        }
+
+        .header-contact a:hover { color: var(--gold-light); }
+        .header-contact i { color: var(--gold); font-size: 0.85rem; width: 14px; }
+
+        .social-row {
+            margin-top: 16px;
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+        }
+
+        .social-row a {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(184,151,58,0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+            font-size: 1rem;
+            transition: all 0.25s;
+        }
+
+        .social-row a:hover {
+            background: var(--gold);
+            color: var(--navy);
+            border-color: var(--gold);
+            transform: translateY(-2px);
+        }
+
+        .header-bio-col {
+            flex: 1;
+            padding-top: 10px;
+        }
+
+        .bio-label {
+            font-size: 0.72rem;
+            letter-spacing: 0.18em;
+            text-transform: uppercase;
+            color: var(--gold);
+            font-weight: 600;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .bio-label::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background: rgba(184,151,58,0.3);
+        }
+
+        .bio-text {
+            font-family: 'EB Garamond', serif;
+            font-size: 1.12rem;
+            line-height: 1.85;
+            color: rgba(255,255,255,0.82);
+            text-align: justify;
+        }
+
+        .bio-text em {
+            color: var(--gold-light);
+            font-style: italic;
+        }
+
+        /* ─── NAVIGATION ─── */
+        nav {
+            background: var(--warm-white);
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 12px rgba(26,39,68,0.08);
+        }
+
+        .nav-inner {
+            max-width: 1040px;
+            margin: 0 auto;
+            padding: 0 30px;
+            display: flex;
+            align-items: center;
+            gap: 0;
+        }
+
+        .nav-brand {
+            font-family: 'EB Garamond', serif;
+            font-size: 0.95rem;
+            color: var(--text-light);
+            margin-right: auto;
+            padding: 14px 0;
+            letter-spacing: 0.02em;
+        }
+
+        .nav-brand span { color: var(--navy); font-weight: 600; }
+
+        .tab-link {
+            padding: 16px 22px;
+            color: var(--text-mid);
+            cursor: pointer;
+            font-size: 0.82rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            transition: color 0.2s;
+            position: relative;
+            border: none;
+            background: none;
+            text-decoration: none;
+            display: block;
+        }
+
+        .tab-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 50%; right: 50%;
+            height: 3px;
+            background: var(--gold);
+            transition: left 0.2s, right 0.2s;
+        }
+
+        .tab-link:hover { color: var(--navy); }
+        .tab-link:hover::after { left: 20%; right: 20%; }
+
+        .tab-link.active {
+            color: var(--navy);
+        }
+
+        .tab-link.active::after {
+            left: 0; right: 0;
+        }
+
+        /* ─── MAIN LAYOUT ─── */
+        .page-wrap {
+            max-width: 1040px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        /* ─── SECTION ─── */
+        .section {
+            padding: 52px 0 40px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .section:last-child { border-bottom: none; }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 30px;
+        }
+
+        .section-icon {
+            width: 38px;
+            height: 38px;
+            background: var(--navy);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--gold);
+            font-size: 0.9rem;
+            flex-shrink: 0;
+        }
+
+        .section-title {
+            font-family: 'EB Garamond', serif;
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: var(--navy);
+            line-height: 1;
+        }
+
+        .section-title-line {
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(90deg, var(--border), transparent);
+        }
+
+        /* ─── TIMELINE / ITEM ─── */
+        .timeline { position: relative; padding-left: 24px; }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 5px; top: 8px; bottom: 8px;
+            width: 2px;
+            background: linear-gradient(180deg, var(--gold), transparent);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 32px;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -23px;
+            top: 8px;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: var(--gold);
+            border: 2px solid var(--cream);
+            box-shadow: 0 0 0 2px var(--gold);
+        }
+
+        .timeline-date {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 4px;
+        }
+
+        .timeline-role {
+            font-family: 'EB Garamond', serif;
+            font-size: 1.18rem;
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 2px;
+        }
+
+        .timeline-inst {
+            font-weight: 600;
+            color: var(--text-mid);
+            font-size: 0.9rem;
+        }
+
+        .timeline-detail {
+            color: var(--text-light);
+            font-size: 0.88rem;
+            margin-top: 4px;
+        }
+
+        .timeline-detail a {
+            color: var(--gold);
+            text-decoration: none;
+            border-bottom: 1px dashed currentColor;
+        }
+
+        .timeline-detail a:hover { color: var(--navy); }
+
+        /* ─── TAGS ─── */
+        .tags-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: var(--warm-white);
+            border: 1px solid var(--border);
+            color: var(--text-mid);
+            padding: 7px 16px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+            transition: all 0.2s;
+        }
+
+        .tag:hover {
+            background: var(--navy);
+            color: var(--gold-light);
+            border-color: var(--navy);
+        }
+
+        .tag i { font-size: 0.78rem; color: var(--gold); }
+        .tag:hover i { color: var(--gold-light); }
+
+        /* ─── PUBLICATIONS ─── */
+        .pub-list { display: flex; flex-direction: column; gap: 20px; }
+
+        .pub-card {
+            background: var(--warm-white);
+            border: 1px solid var(--border);
+            border-left: 4px solid var(--navy);
+            border-radius: 6px;
+            padding: 22px 24px;
+            transition: border-left-color 0.2s, box-shadow 0.2s;
+        }
+
+        .pub-card:hover {
+            border-left-color: var(--gold);
+            box-shadow: 0 4px 20px rgba(26,39,68,0.08);
+        }
+
+        .pub-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--warm-white);
+            background: var(--navy);
+            padding: 3px 10px;
+            border-radius: 3px;
+            margin-bottom: 10px;
+        }
+
+        .pub-badge.journal { background: #2d6a4f; }
+        .pub-badge.conference { background: #1e4d8c; }
+
+        .pub-title {
+            font-family: 'EB Garamond', serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--navy);
+            line-height: 1.5;
+            margin-bottom: 6px;
+        }
+
+        .pub-venue {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        .pub-year {
+            display: inline-block;
+            font-size: 0.78rem;
+            font-weight: 700;
+            color: var(--gold);
+            margin-left: 8px;
+        }
+
+        /* ─── PATENTS ─── */
+        .patent-list { display: flex; flex-direction: column; gap: 16px; }
+
+        .patent-card {
+            background: var(--warm-white);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 18px 22px;
+            display: flex;
+            gap: 18px;
+            align-items: flex-start;
+            transition: box-shadow 0.2s;
+        }
+
+        .patent-card:hover { box-shadow: 0 4px 16px rgba(26,39,68,0.08); }
+
+        .patent-num {
+            width: 32px;
+            height: 32px;
+            flex-shrink: 0;
+            background: var(--navy);
+            color: var(--gold);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'EB Garamond', serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+        }
+
+        .patent-body {}
+        .patent-title {
+            font-weight: 600;
+            color: var(--navy);
+            font-size: 0.95rem;
+            margin-bottom: 4px;
+        }
+
+        .patent-meta {
+            font-size: 0.82rem;
+            color: var(--text-light);
+        }
+
+        /* ─── TEAM ─── */
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+            gap: 28px;
+            margin-top: 10px;
+        }
+
+        .team-card {
+            background: var(--warm-white);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 24px 16px 20px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .team-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 28px rgba(26,39,68,0.1);
+        }
+
+        .team-photo {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 14px;
+            display: block;
+            border: 3px solid var(--border);
+            transition: border-color 0.2s;
+        }
+
+        .team-card:hover .team-photo { border-color: var(--gold); }
+
+        .team-initials {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--navy), var(--navy-light));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'EB Garamond', serif;
+            font-size: 1.4rem;
+            color: var(--gold-light);
+            margin: 0 auto 14px;
+            border: 3px solid var(--border);
+            transition: border-color 0.2s;
+        }
+
+        .team-card:hover .team-initials { border-color: var(--gold); }
+
+        .team-name {
+            font-family: 'EB Garamond', serif;
+            font-size: 0.98rem;
+            font-weight: 600;
+            color: var(--navy);
+            line-height: 1.3;
+            margin-bottom: 4px;
+        }
+
+        .team-role {
+            font-size: 0.78rem;
+            color: var(--gold);
+            font-weight: 600;
+            letter-spacing: 0.05em;
+            margin-bottom: 2px;
+        }
+
+        .team-affil {
+            font-size: 0.78rem;
+            color: var(--text-light);
+        }
+
+        /* ─── ACTIVITIES ─── */
+        .activity-box {
+            background: var(--warm-white);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 22px 26px;
+        }
+
+        .activity-label {
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 8px;
+        }
+
+        .activity-text {
+            color: var(--text-mid);
+            font-size: 0.9rem;
+            line-height: 1.8;
+        }
+
+        /* ─── EVENTS ─── */
+        .event-card {
+            background: var(--warm-white);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 22px 26px;
+            display: flex;
+            gap: 22px;
+            align-items: flex-start;
+            margin-bottom: 16px;
+            transition: box-shadow 0.2s;
+        }
+
+        .event-card:hover { box-shadow: 0 4px 20px rgba(26,39,68,0.08); }
+
+        .event-date-block {
+            flex-shrink: 0;
+            width: 54px;
+            text-align: center;
+            background: var(--navy);
+            border-radius: 6px;
+            padding: 10px 6px;
+            color: #fff;
+        }
+
+        .event-month {
+            font-size: 0.65rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: var(--gold);
+        }
+
+        .event-day {
+            font-family: 'EB Garamond', serif;
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 1;
+        }
+
+        .event-year {
+            font-size: 0.65rem;
+            color: rgba(255,255,255,0.5);
+        }
+
+        .event-body {}
+        .event-title {
+            font-family: 'EB Garamond', serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 4px;
+        }
+
+        .event-desc {
+            font-size: 0.87rem;
+            color: var(--text-light);
+        }
+
+        .event-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            padding: 3px 10px;
+            border-radius: 3px;
+            margin-top: 8px;
+        }
+
+        .event-badge.upcoming {
+            background: #e8f4fd;
+            color: #1a6fa8;
+        }
+
+        .event-badge.past {
+            background: var(--tag-bg);
+            color: var(--text-light);
+        }
+
+        /* ─── VACANCIES ─── */
+        .vacancy-card {
+            background: var(--warm-white);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 22px 26px;
+            margin-bottom: 16px;
+            transition: box-shadow 0.2s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .vacancy-card::before {
+            content: '';
+            position: absolute;
+            left: 0; top: 0; bottom: 0;
+            width: 4px;
+            background: var(--gold);
+        }
+
+        .vacancy-card:hover { box-shadow: 0 4px 20px rgba(26,39,68,0.08); }
+
+        .vacancy-title {
+            font-family: 'EB Garamond', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 6px;
+        }
+
+        .vacancy-meta {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 10px;
+        }
+
+        .vacancy-meta-item {
+            font-size: 0.8rem;
+            color: var(--text-light);
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .vacancy-meta-item i { color: var(--gold); font-size: 0.78rem; }
+
+        .vacancy-desc {
+            font-size: 0.88rem;
+            color: var(--text-mid);
+            line-height: 1.7;
+        }
+
+        .apply-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 14px;
+            padding: 8px 18px;
+            background: var(--navy);
+            color: var(--gold-light);
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: background 0.2s;
+        }
+
+        .apply-btn:hover { background: var(--gold); color: var(--navy); }
+
+        .placeholder-note {
+            background: var(--section-bg);
+            border: 1px dashed var(--border);
+            border-radius: 8px;
+            padding: 30px;
+            text-align: center;
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .placeholder-note i {
+            font-size: 2rem;
+            color: var(--border);
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* ─── TWO COL ─── */
+        .two-col {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+        }
+
+        /* ─── FOOTER ─── */
+        footer {
+            background: var(--navy);
+            color: rgba(255,255,255,0.5);
+            text-align: center;
+            padding: 28px 30px;
+            font-size: 0.82rem;
+            position: relative;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, transparent, var(--gold), transparent);
+        }
+
+        footer span { color: var(--gold); }
+
+        /* ─── RESPONSIVE ─── */
+        @media (max-width: 760px) {
+            .header-inner { flex-direction: column; align-items: center; }
+            .header-bio-col { text-align: justify; }
+            .bio-text { font-size: 1rem; }
+            .nav-brand { display: none; }
+            .tab-link { padding: 14px 14px; font-size: 0.75rem; letter-spacing: 0.06em; }
+            .two-col { grid-template-columns: 1fr; }
+            .team-grid { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); gap: 16px; }
+        }
+
+        /* ─── ANIMATIONS ─── */
+        .fade-in {
+            animation: fadeInUp 0.45s ease both;
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(14px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
+<header>
+    <div class="header-inner">
+        <div class="header-photo-col">
+            <!-- If profile.png doesn't load, initials fallback -->
+            <img src="profile.png" alt="Dr. Gowtham Reddy Nimmalapalli" class="profile-photo"
+                 onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="photo-initials" style="display:none;">GR</div>
+
+            <div class="header-name">Dr. Gowtham Reddy<br>Nimmalapalli</div>
+            <div class="header-title">Postdoctoral Fellow</div>
+            <div class="header-inst">IIT Gandhinagar</div>
+
+            <div class="header-contact">
+                <a href="mailto:gowtham12.reddy@gmail.com">
+                    <i class="fas fa-envelope"></i> gowtham12.reddy@gmail.com
+                </a>
+            </div>
+
+            <div class="social-row">
+                <a href="https://www.linkedin.com/in/dr-gowtham-reddy-n-4098376b/" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://scholar.google.com/citations?user=1KALulcAAAAJ&hl=en" target="_blank" title="Google Scholar">
+                    <i class="fas fa-graduation-cap"></i>
+                </a>
+                <a href="https://orcid.org/0000-0002-2358-1720" target="_blank" title="ORCID">
+                    <i class="ai ai-orcid"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="header-bio-col">
+            <div class="bio-label">Research Statement</div>
+            <p class="bio-text">
+                I actively conduct research in <em>AI-driven biomedical signal processing</em>,
+                <em>brain–computer interfaces</em>, and <em>intelligent medical decision-making</em>.
+                My work focuses on developing efficient, interpretable, and real-time decision support
+                systems for healthcare applications. I design novel feature representation and multimodal
+                fusion strategies to model complex interactions in non-stationary biosignals such as
+                <em>EEG</em> and <em>sEMG</em>. I explore attention-based deep learning, time–frequency
+                analysis, and ensemble frameworks to extract clinically meaningful patterns from uncertain
+                data. I also develop lightweight models suitable for point-of-care deployment.
+                Currently, I work on <em>hybrid BCI systems</em> for effective decision communication.
+                My long-term goal is to build trustworthy AI systems for neurological healthcare and
+                assistive technologies.
+            </p>
+        </div>
+    </div>
+</header>
+
+<!-- ═══════════════════════════ NAV ═══════════════════════════ -->
+<nav>
+    <div class="nav-inner">
+        <div class="nav-brand"><span>GR Nimmalapalli</span> · IIT Gandhinagar</div>
+        <div class="tab-link active" onclick="openTab(event,'Home')">Home</div>
+        <div class="tab-link" onclick="openTab(event,'Publications')">Publications</div>
+        <div class="tab-link" onclick="openTab(event,'Team')">Team</div>
+        <div class="tab-link" onclick="openTab(event,'Events')">Events</div>
+        <div class="tab-link" onclick="openTab(event,'Vacancies')">Vacancies</div>
+    </div>
+</nav>
+
+<!-- ═══════════════════════════ CONTENT ═══════════════════════════ -->
+<div class="page-wrap">
+
+    <!-- ── HOME ── -->
+    <div id="Home" class="tab-content active">
+
+        <!-- Current Position -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon"><i class="fas fa-briefcase"></i></div>
+                <div class="section-title">Current Position</div>
+                <div class="section-title-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">September 2025 – Present</div>
+                    <div class="timeline-role">Postdoctoral Fellow</div>
+                    <div class="timeline-inst">Indian Institute of Technology Gandhinagar</div>
+                    <div class="timeline-detail">Project: <em>Hybrid BCI for Effective Decision Communication</em></div>
+                    <div class="timeline-detail">Principal Investigator:
+                        <a href="https://scholar.google.co.in/citations?user=5xxepFkAAAAJ&hl=en" target="_blank">Dr. Yogesh Kumar Meena</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Research Interests -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon"><i class="fas fa-flask"></i></div>
+                <div class="section-title">Research Interests</div>
+                <div class="section-title-line"></div>
+            </div>
+            <div class="tags-grid">
+                <div class="tag"><i class="fas fa-brain"></i> Biomedical Signal Processing</div>
+                <div class="tag"><i class="fas fa-wave-square"></i> Brain–Computer Interfaces</div>
+                <div class="tag"><i class="fas fa-robot"></i> Machine Learning</div>
+                <div class="tag"><i class="fas fa-network-wired"></i> Deep Learning</div>
+                <div class="tag"><i class="fas fa-heartbeat"></i> EEG Analysis</div>
+                <div class="tag"><i class="fas fa-microchip"></i> Point-of-Care Systems</div>
+                <div class="tag"><i class="fas fa-eye"></i> Interpretable AI</div>
+                <div class="tag"><i class="fas fa-accessible-icon"></i> Assistive Technologies</div>
+            </div>
+        </div>
+
+        <!-- Education -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon"><i class="fas fa-university"></i></div>
+                <div class="section-title">Education</div>
+                <div class="section-title-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">January 2020 – December 2025</div>
+                    <div class="timeline-role">Ph.D. — School of Medical Science and Technology</div>
+                    <div class="timeline-inst">Indian Institute of Technology Kharagpur</div>
+                    <div class="timeline-detail">Thesis: <em>An Integrated Framework for Predicting Epilepsy using EEG Signals</em></div>
+                    <div class="timeline-detail">
+                        Supervisor: <a href="https://scholar.google.com/citations?user=tD8YpZUAAAAJ&hl=en" target="_blank">Dr. Debashree Guha Adhya</a>&ensp;·&ensp;
+                        Co-supervisor: <a href="https://scholar.google.com/citations?user=k0MoQ9UAAAAJ&hl=en" target="_blank">Prof. Manjunatha Mahadevappa</a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-role">M.Tech. — Signal Processing</div>
+                    <div class="timeline-inst">University of Calicut</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-role">B.Tech. — Electronics and Communication Engineering</div>
+                    <div class="timeline-inst">JNTU Anantapur</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon"><i class="fas fa-code"></i></div>
+                <div class="section-title">Industry Experience</div>
+                <div class="section-title-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-role">Software Engineer II</div>
+                    <div class="timeline-inst">Terralogic Software Solutions Pvt. Ltd., Bangalore</div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-role">Deep Learning Engineer</div>
+                    <div class="timeline-inst">Innoactive Intelligence LLP, Bangalore</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Patents -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon"><i class="fas fa-certificate"></i></div>
+                <div class="section-title">Patents</div>
+                <div class="section-title-line"></div>
+            </div>
+            <div class="patent-list">
+                <div class="patent-card">
+                    <div class="patent-num">1</div>
+                    <div class="patent-body">
+                        <div class="patent-title">A Point-of-Care based System for Generating and Analyzing Tear Fern Patterns</div>
+                        <div class="patent-meta">Provisional No: 202531029164 &nbsp;·&nbsp; Filed 2025</div>
+                    </div>
+                </div>
+                <div class="patent-card">
+                    <div class="patent-num">2</div>
+                    <div class="patent-body">
+                        <div class="patent-title">A Real-Time Ultrafast Epilepsy Diagnosis and Artifact Classification System</div>
+                        <div class="patent-meta">Application Filed &nbsp;·&nbsp; December 2025</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Professional Activities -->
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon"><i class="fas fa-tasks"></i></div>
+                <div class="section-title">Professional Activities</div>
+                <div class="section-title-line"></div>
+            </div>
+            <div class="activity-box">
+                <div class="activity-label">Peer Review Service</div>
+                <div class="activity-text">
+                    IEEE ISBI &nbsp;·&nbsp; IEEE INDICON &nbsp;·&nbsp; IDEAL 2025 &nbsp;·&nbsp;
+                    Frontiers in Neuroscience &nbsp;·&nbsp; Expert Systems with Applications &nbsp;·&nbsp;
+                    Signal, Image and Video Processing
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /Home -->
+
+
+    <!-- ── PUBLICATIONS ── -->
+    <div id="Publications" class="tab-content">
+
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon"><i class="fas fa-book-open"></i></div>
+                <div class="section-title">Journal Articles</div>
+                <div class="section-title-line"></div>
+            </div>
+            <div class="pub-list">
+                <div class="pub-card">
+                    <div class="pub-badge journal"><i class="fas fa-journal-whills"></i> Journal</div>
+                    <div class="pub-title">Classification of epileptic EEG signals with the utilization of Bonferroni mean based fuzzy pattern tree</div>
+                    <div class="pub-venue">Expert Systems with Applications, 239, 122424 <span class="pub-year">2024</span></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon"><i class="fas fa-chalkboard-teacher"></i></div>
+                <div class="section-title">Conference Papers</div>
+                <div class="section-title-line"></div>
+            </div>
+            <div class="pub-list">
+                <div class="pub-card">
+                    <div class="pub-badge conference"><i class="fas fa-microphone"></i> Conference</div>
+                    <div class="pub-title">An efficient 1D CNN architecture for multi-channel EEG seizure detection</div>
+                    <div class="pub-venue">47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBS) <span class="pub-year">July 2025</span></div>
+                </div>
+                <div class="pub-card">
+                    <div class="pub-badge conference"><i class="fas fa-microphone"></i> Conference</div>
+                    <div class="pub-title">EEG artifact removal using stacked multi-Head attention transformer architecture</div>
+                    <div class="pub-venue">46th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBS) <span class="pub-year">July 2024</span></div>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /Publications -->
+
+
+    <!-- ── TEAM ── -->
+    <div id="Team" class="tab-content">
+
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon"><i class="fas fa-users"></i></div>
+                <div class="section-title">Collaborators</div>
+                <div class="section-title-line"></div>
+            </div>
+            <div class="team-grid">
+
+                <div class="team-card">
+                    <img src="Debashree.jpg" alt="Dr. Debashree Guha Adhya" class="team-photo"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="team-initials" style="display:none;">DG</div>
+                    <div class="team-name">Dr. Debashree Guha Adhya</div>
+                    <div class="team-role">PhD Supervisor</div>
+                    <div class="team-affil">IIT Kharagpur</div>
+                </div>
+
+                <div class="team-card">
+                    <img src="Manjunatha.jpeg" alt="Prof. Manjunatha Mahadevappa" class="team-photo"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="team-initials" style="display:none;">MM</div>
+                    <div class="team-name">Prof. Manjunatha Mahadevappa</div>
+                    <div class="team-role">PhD Co-supervisor</div>
+                    <div class="team-affil">IIT Kharagpur</div>
+                </div>
+
+                <div class="team-card">
+                    <img src="aneek.png" alt="Dr. Aneek Adhya" class="team-photo"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="team-initials" style="display:none;">AA</div>
+                    <div class="team-name">Dr. Aneek Adhya</div>
+                    <div class="team-role">Collaborator</div>
+                    <div class="team-affil">IIT Kharagpur</div>
+                </div>
+
+                <div class="team-card">
+                    <img src="debjani.jpg" alt="Prof. Debjani Chakraborty" class="team-photo"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="team-initials" style="display:none;">DC</div>
+                    <div class="team-name">Prof. Debjani Chakraborty</div>
+                    <div class="team-role">Collaborator</div>
+                    <div class="team-affil">IIT Kharagpur</div>
+                </div>
+
+                <div class="team-card">
+                    <img src="Yogesh.jpg" alt="Dr. Yogesh Kumar Meena" class="team-photo"
+                         onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="team-initials" style="display:none;">YM</div>
+                    <div class="team-name">Dr. Yogesh Kumar Meena</div>
+                    <div class="team-role">Principal Investigator</div>
+                    <div class="team-affil">IIT Gandhinagar</div>
+                </div>
+
+            </div>
+        </div>
+
+    </div><!-- /Team -->
+
+
+    <!-- ── EVENTS ── -->
+    <div id="Events" class="tab-content">
+
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon"><i class="fas fa-calendar-alt"></i></div>
+                <div class="section-title">Upcoming Events</div>
+                <div class="section-title-line"></div>
+            </div>
+
+            <div class="event-card">
+                <div class="event-date-block">
+                    <div class="event-month">Jul</div>
+                    <div class="event-day">25</div>
+                    <div class="event-year">2025</div>
+                </div>
+                <div class="event-body">
+                    <div class="event-title">47th IEEE EMBS Annual International Conference</div>
+                    <div class="event-desc">Presenting paper: <em>An efficient 1D CNN architecture for multi-channel EEG seizure detection</em></div>
+                    <span class="event-badge upcoming"><i class="fas fa-circle" style="font-size:0.5rem;"></i> Upcoming</span>
+                </div>
+            </div>
+
+            <div class="placeholder-note" style="margin-top: 8px;">
+                <i class="fas fa-calendar-plus"></i>
+                Further events, workshops, and seminars will be listed here as they are confirmed.
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon"><i class="fas fa-history"></i></div>
+                <div class="section-title">Past Events</div>
+                <div class="section-title-line"></div>
+            </div>
+
+            <div class="event-card">
+                <div class="event-date-block">
+                    <div class="event-month">Jul</div>
+                    <div class="event-day">15</div>
+                    <div class="event-year">2024</div>
+                </div>
+                <div class="event-body">
+                    <div class="event-title">46th IEEE EMBS Annual International Conference</div>
+                    <div class="event-desc">Presented: <em>EEG artifact removal using stacked multi-Head attention transformer architecture</em></div>
+                    <span class="event-badge past"><i class="fas fa-check" style="font-size:0.6rem;"></i> Presented</span>
+                </div>
+            </div>
+        </div>
+
+    </div><!-- /Events -->
+
+
+    <!-- ── VACANCIES ── -->
+    <div id="Vacancies" class="tab-content">
+
+        <div class="section">
+            <div class="section-header">
+                <div class="section-icon"><i class="fas fa-user-plus"></i></div>
+                <div class="section-title">Open Positions</div>
+                <div class="section-title-line"></div>
+            </div>
+
+            <div class="vacancy-card">
+                <div class="vacancy-title">Project / Research Assistant — Hybrid BCI Systems</div>
+                <div class="vacancy-meta">
+                    <div class="vacancy-meta-item"><i class="fas fa-map-marker-alt"></i> IIT Gandhinagar</div>
+                    <div class="vacancy-meta-item"><i class="fas fa-clock"></i> Full-time</div>
+                    <div class="vacancy-meta-item"><i class="fas fa-tag"></i> Research Position</div>
+                </div>
+                <div class="vacancy-desc">
+                    We are looking for motivated candidates interested in working on brain–computer interface systems,
+                    EEG signal processing, and real-time embedded AI. Candidates with a background in biomedical
+                    engineering, electronics, or computer science with exposure to machine learning are encouraged
+                    to apply.
+                </div>
+                <a href="mailto:gowtham12.reddy@gmail.com" class="apply-btn"><i class="fas fa-paper-plane"></i> Express Interest</a>
+            </div>
+
+            <div class="placeholder-note" style="margin-top: 8px;">
+                <i class="fas fa-inbox"></i>
+                Additional PhD, Postdoc, and internship opportunities will be posted here. Check back regularly or send a speculative enquiry.
+            </div>
+        </div>
+
+    </div><!-- /Vacancies -->
+
+</div><!-- /page-wrap -->
+
+<!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+<footer>
+    <p>&copy; 2026 <span>Dr. Gowtham Reddy Nimmalapalli</span> &nbsp;·&nbsp; Postdoctoral Fellow, IIT Gandhinagar</p>
+</footer>
+
+<script>
+    function openTab(evt, tabName) {
+        document.querySelectorAll('.tab-content').forEach(el => el.classList.remove('active'));
+        document.querySelectorAll('.tab-link').forEach(el => el.classList.remove('active'));
+        const tab = document.getElementById(tabName);
+        tab.classList.add('active');
+        tab.classList.remove('fade-in');
+        void tab.offsetWidth; // reflow to restart animation
+        tab.classList.add('fade-in');
+        evt.currentTarget.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
+
+
+
+
+<!-- <!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -893,4 +2169,4 @@
 </body>
 </html>
 
-
+ -->
